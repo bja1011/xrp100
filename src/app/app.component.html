@@ -1,3 +1,11 @@
-<mat-toolbar>XRP 100</mat-toolbar>
+<mat-toolbar>
+  <nav>
+    <button [routerLink]="['/']" mat-button>XRP <img src="assets/images/100_emoji.png" height="50px "></button>
+    <button [routerLink]="['/']" mat-button>FudDesk</button>
+    <button [routerLink]="['/partners']" mat-button>Partners</button>
+    <button [routerLink]="['/about']" mat-button>About site</button>
+  </nav>
+</mat-toolbar>
+
 
 <router-outlet></router-outlet>

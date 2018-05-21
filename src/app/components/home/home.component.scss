@@ -1,3 +1,11 @@
-.fud-card {
-  max-width: 300px;
+.fud-list {
+
+  text-align: center;
+
+  .fud-card {
+    text-align: left;
+    max-width: 300px;
+    display: inline-block;
+    margin: 20px;
+  }
 }

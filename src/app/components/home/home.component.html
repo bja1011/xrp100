@@ -1,24 +1,27 @@
 <div class="fud-list">
+  <div class="fuddesk-logo">
+  </div>
+  <h2>FUDDesk</h2>
   <ng-container *ngFor="let fud of fudsList">
     <a [routerLink]="[fud.url]">
       <mat-card
         class="fud-card"
       >
         <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
+          <!--<div mat-card-avatar class="example-header-image"></div>-->
           <mat-card-title>{{fud.title}}</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image [src]="fud.photo" alt="Photo of a fud">
+        <!--<img mat-card-image [src]="fud.photo" alt="Photo of a fud">-->
         <mat-card-content>
           <p>
             {{fud.excerpt}}
           </p>
         </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
+        <!--<mat-card-actions>-->
+          <!--<button mat-button>LIKE</button>-->
+          <!--<button mat-button>SHARE</button>-->
+        <!--</mat-card-actions>-->
       </mat-card>
     </a>
   </ng-container>

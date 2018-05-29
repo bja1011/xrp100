@@ -1,11 +1,26 @@
 .fud-list {
-
   text-align: center;
+
+  .fuddesk-logo {
+    background-color: #fff;
+    background-image: url(../../../assets/images/fuddesk-logo.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
 
   .fud-card {
     text-align: left;
-    max-width: 300px;
+    max-width: 200px;
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: none;
+    border: solid 1px #fff;
+    //filter: blur(20px);
   }
 }

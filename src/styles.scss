@@ -9,6 +9,7 @@
 
 body,html {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -16,11 +17,29 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Lato', sans-serif;
+  overflow: hidden;
 
   h2 {
     color: #323232;
     text-align: center;
   }
+
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 4px;
+  }
+
+  .not-true {
+    color: #ff3333;
+    border: dashed 1px #ff3333;
+    border-radius: 3px;
+    line-height: 30px;
+    font-weight: bold;
+  }
 }
+
 
 

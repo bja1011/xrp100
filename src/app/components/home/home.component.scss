@@ -1,7 +1,7 @@
 .fud-list {
-  text-align: left;
-  max-width: 1040px;
+  text-align: center;
   margin: 0 auto;
+  background: none;
 
   .fuddesk-logo {
     background-color: #fff;
@@ -15,14 +15,44 @@
     margin: 0 auto;
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .fud-card {
+        transform: scale(1.05);
+      }
+    }
+  }
+
   .fud-card {
+    transition: transform 0.3s;
     text-align: left;
     max-width: 200px;
     display: inline-block;
     margin: 5px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: none;
     border: solid 1px #fff;
     //filter: blur(20px);
+
+    mat-card-header {
+      width: 100%;
+      text-align: center;
+      .mat-card-header-text {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fud-list {
+    .fud-card {
+      max-width: inherit;
+      display: block;
+      margin-bottom: 10px;
+    }
   }
 }

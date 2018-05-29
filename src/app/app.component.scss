@@ -2,7 +2,7 @@ mat-toolbar {
   display: block;
   vertical-align: middle;
   position: fixed;
-  top: 5px;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 9;
@@ -12,4 +12,5 @@ mat-toolbar {
   width: 100%;
   height: calc(100% - 100px);
   padding-top: 100px;
+  overflow-y: scroll;
 }

@@ -32,7 +32,7 @@ const FUD_MOCKS: Fud[] = [
   },
   {
     id: 1,
-    title: 'XRP is centralized',
+    title: 'XRP is not a cryptocurrency',
     photo: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
     excerpt: 'XRP is centralized shitcoin and Ripple can freeze Your tokens',
     description: 'Not true,Not trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot true'

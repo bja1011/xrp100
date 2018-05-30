@@ -2,10 +2,14 @@ mat-toolbar {
   display: block;
   vertical-align: middle;
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
+
+  nav {
+    margin-top: 10px;
+  }
 }
 
 .router-container {
@@ -13,4 +17,9 @@ mat-toolbar {
   height: calc(100% - 100px);
   padding-top: 100px;
   overflow-y: scroll;
+}
+
+
+.active-link {
+  color: red;
 }

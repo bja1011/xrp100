@@ -6,9 +6,32 @@ mat-toolbar {
   left: 0;
   width: 100%;
   z-index: 9;
+  border-bottom: solid 1px #999;
+
+  .logo {
+    margin-top: 10px;
+
+    .tags {
+      font-size: 12px;
+      padding-left: 3px;
+      font-weight: 300;
+      float: right;
+      text-align: left;
+      line-height: 12px;
+      vertical-align: middle;
+      margin-top: 5px;
+    }
+  }
 
   nav {
     margin-top: 10px;
+    float: right;
+
+    button {
+      &.active-route {
+        border-bottom: solid 4px #333333;
+      }
+    }
   }
 }
 
@@ -16,10 +39,10 @@ mat-toolbar {
   width: 100%;
   height: calc(100% - 100px);
   padding-top: 100px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
-
 
 .active-link {
   color: red;
 }
+

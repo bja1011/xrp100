@@ -1,16 +1,23 @@
 <mat-toolbar>
+  <button class="logo" [routerLink]="['/']" mat-button>
+    <img src="assets/images/xrp-logo.svg" height="20px" style="margin-right: 10px;">
+    <img src="assets/images/100_emoji.png" height="30px ">
+    <div class="tags">
+      #0doubt <br>
+      #xrpthestandard
+    </div>
+  </button>
   <nav>
-    <button [routerLink]="['/']" mat-button>XRP <img src="assets/images/100_emoji.png" height="30px "> | #0doubt</button>
     <button
-      routerLinkActive="mat-raised-button"
+      routerLinkActive="active-route"
       [routerLinkActiveOptions]="{exact:true}"
       [routerLink]="['/']"
       mat-button
     >
       FudDesk
     </button>
-    <button routerLinkActive="mat-raised-button" [routerLink]="['/partners']" mat-button>Partners</button>
-    <button routerLinkActive="mat-raised-button" [routerLink]="['/about']" mat-button>About site</button>
+    <button routerLinkActive="active-route" [routerLink]="['/partners']" mat-button>Partners</button>
+    <button routerLinkActive="active-route" [routerLink]="['/about']" mat-button>About site</button>
   </nav>
 </mat-toolbar>
 <div class="router-container">

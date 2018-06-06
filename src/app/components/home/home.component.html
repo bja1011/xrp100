@@ -1,7 +1,7 @@
 <div class="fud-list container">
   <div class="fuddesk-logo">
+    FudDesk
   </div>
-  <h2>FudDesk</h2>
   <ng-container *ngFor="let fud of fudsList">
     <a [routerLink]="[fud.url]">
       <mat-card class="fud-card">
@@ -15,4 +15,9 @@
       </mat-card>
     </a>
   </ng-container>
+  <mat-card class="fud-card">
+    <mat-card-content>
+      <p class="text-center">more to come...</p>
+    </mat-card-content>
+  </mat-card>
 </div>

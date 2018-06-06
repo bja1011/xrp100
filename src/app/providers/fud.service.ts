@@ -41,34 +41,9 @@ const FUD_MOCKS: Fud[] = [
   },
   {
     id: 2,
-    title: 'XRP is not a real cryptocurrency',
-    excerpt: 'XRP is centralized shitcoin and Ripple can freeze Your tokens',
-    description: 'Definition of a blockchain: A blockchain is a continuously growing list of records, called blocks, ' +
-    'which are linked and secured using cryptography, on a distributed ledger. Each block typically contains a cryptographic hash ' +
-    'of the previous block, a timestamp and transaction data. This all applies on XRP.'
-  },
-  {
-    id: 3,
     title: 'Ripple can freeze your coins',
     excerpt: 'XRP is centralized shitcoin and Ripple can freeze Your tokens',
-    description: 'Not true,Not trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot true'
-  },
-  {
-    id: 4,
-    title: 'XRP is centralized',
-    excerpt: 'XRP is centralized shitcoin and Ripple can freeze Your tokens',
-    description: 'Not true,Not trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot true'
-  },
-  {
-    id: 5,
-    title: 'XRP is centralized',
-    excerpt: 'XRP is centralized shitcoin and Ripple can freeze Your tokens',
-    description: 'Not true,Not trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot true'
-  },
-  {
-    id: 6,
-    title: 'XRP is centralized',
-    excerpt: 'XRP is centralized shitcoin and Ripple can freeze Your tokens',
-    description: 'Not true,Not trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot trueNot true'
+    description: 'The freeze feature only applies to issued currencies (Trusts, non-native assets on the XRP ledger). No one can freeze XRP, the native asset on the XRP ledger.',
+    tweet: '977410157633093632'
   },
 ];

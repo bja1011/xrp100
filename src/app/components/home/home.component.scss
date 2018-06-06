@@ -7,12 +7,19 @@
     background-color: #fff;
     background-image: url(../../../assets/images/fuddesk-logo.png);
     background-size: 30px;
-    background-position: center;
+    background-position: 15px center;
     background-repeat: no-repeat;
-    width: 50px;
+    width: 90px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0 auto;
+    line-height: 50px;
+    padding-left: 55px;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 20px;
   }
 
   a {
@@ -22,7 +29,22 @@
       .fud-card {
         transform: scale(1.05);
         background: rgba(255,255,255,1);
+        z-index: 2;
       }
+    }
+
+    .not-true {
+      position: absolute;
+      right: -2px;
+      bottom: 2px;
+      padding-left: 10px;
+      padding-right: 10px;
+      transform: rotate(-17deg);
+      background: #EF4836;
+      border: dashed 2px rgba(255,255,255,0.5);
+      color: #fff;
+      border-radius: 3px;
+      box-shadow: 1px 1px 3px #333;
     }
   }
 
@@ -34,9 +56,11 @@
     height: 130px;
     display: inline-block;
     margin: 5px;
+    float: left;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: none;
+    //box-shadow: none;
     border: solid 1px #fff;
+    //box-shadow: 0 0 3px #ccc;
     //filter: blur(20px);
 
     .fud-title {

@@ -3,6 +3,7 @@ import {FudService} from '../../providers/fud.service';
 import {Fud} from '../../models/fud.model';
 import {ActivatedRoute} from '@angular/router';
 import {slugify} from '../../utils/misc';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fud-view',
@@ -17,7 +18,9 @@ export class FudViewComponent implements OnInit {
   showSideNav: boolean;
 
   constructor(private fudService: FudService,
-              private route: ActivatedRoute,) {
+              private route: ActivatedRoute,
+              private sanitizer: DomSanitizer,
+  ) {
     this.fudsList = this.fudService.fuds.map((el) => {
       return {
         ...el,

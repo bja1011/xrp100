@@ -9,7 +9,16 @@
       </a>
     </ng-container>
   </div>
-  <div class="fud-details">
-    {{fud.title}}
+  <div class="fud-details" *ngIf="fud">
+    <p class="fud-id">FUD {{fud.id}}:</p>
+    <h2> {{fud.title}} <p class="not-true text-center">NOT TRUE!</p></h2>
+
+    <div class="desc">
+      {{fud.description}}
+    </div>
+    <div class="confirm">
+      <ngx-tweet [tweetId]="fud.tweet"></ngx-tweet>
+    </div>
   </div>
+  <div class="clr"></div>
 </div>

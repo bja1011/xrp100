@@ -21,14 +21,17 @@
     &:hover {
       .fud-card {
         transform: scale(1.05);
+        background: rgba(255,255,255,1);
       }
     }
   }
 
+
   .fud-card {
     transition: transform 0.3s;
     text-align: left;
-    max-width: 200px;
+    width: 200px;
+    height: 130px;
     display: inline-block;
     margin: 5px;
     background: rgba(255, 255, 255, 0.9);
@@ -36,9 +39,14 @@
     border: solid 1px #fff;
     //filter: blur(20px);
 
+    .fud-title {
+      min-height: 50px;
+    }
+
     mat-card-header {
       width: 100%;
       text-align: center;
+
       .mat-card-header-text {
         width: 100%;
         display: block;

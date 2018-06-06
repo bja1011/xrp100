@@ -1,3 +1,21 @@
-.container {
+.fud-id {
+  text-align: center;
+}
 
+.fud-list {
+  width: 0;
+  display: none;
+}
+
+.fud-details {
+  margin-top: 20px;
+
+  .desc, .confirm {
+    float: left;
+    width: 50%;
+  }
+}
+
+.clr {
+  clear: both;
 }

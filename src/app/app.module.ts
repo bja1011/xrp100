@@ -8,6 +8,8 @@ import {MyMaterialModule} from './modules/material/material.module';
 import { FudViewComponent } from './components/fud-view/fud-view.component';
 import { PartnersComponent } from './components/partners/partners.component';
 import { AboutComponent } from './components/about/about.component';
+import { SafePipe } from './pipes/safe.pipe';
+import {NgxTweetModule} from 'ngx-tweet';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     FudViewComponent,
     PartnersComponent,
-    AboutComponent
+    AboutComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MyMaterialModule,
+    NgxTweetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

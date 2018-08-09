@@ -1,23 +1,33 @@
 <div class="fud-list container">
-  <div class="fuddesk-logo">
-    FudDesk
-  </div>
-  <ng-container *ngFor="let fud of fudsList">
-    <a [routerLink]="[fud.url]">
-      <mat-card class="fud-card">
-        <mat-card-content>
-          <p class="text-center">{{fud.title}}</p>
-          <p class="fud-title">
-            {{fud.excerpt}}
-          </p>
-          <p class="not-true text-center">NOT TRUE!</p>
-        </mat-card-content>
-      </mat-card>
-    </a>
-  </ng-container>
-  <mat-card class="fud-card">
-    <mat-card-content>
-      <p class="text-center">more to come...</p>
-    </mat-card-content>
+  <mat-card>
+    <div class="fuddesk-logo">
+      FudDesk
+    </div>
+    <div style="float: left; width: 46%; padding: 2%">
+      <p>One day i decided to create a website where people can find answers for FUDs about XRP and Ripple.</p>
+      <p>Two days later <a href="https://twitter.com/WietseWindhttps://twitter.com/WietseWind"
+                           target="_blank">@WietseWind</a> published <a href="https://fudbingo.com/">fudbingo.com</a>.
+      </p>
+      <p>So visit <strong><a href="https://fudbingo.com/">fudbingo.com</a></strong> to learn about misunderstandings and
+        FUDs about XRP.
+      </p>
+    </div>
+    <div style="float: right; width: 50%">
+      <ngx-tweet tweetId="997447534002962433"></ngx-tweet>
+    </div>
+    <div style="clear: both;"></div>
+  </mat-card>
+  <br><br>
+  <mat-card>
+    <div style="width: 50%; float: left;">
+      <p>If You like games You can play Dungeons of Fud to explore FUDs ;) </p>
+      <p>(demo beta version)</p>
+    </div>
+    <div style="width: 50%; float: right; text-align: left">
+      <p><a href="http://dungeonsoffud.xrp100.net" target="_blank">
+        <img width="200" src="http://dungeonsoffud.xrp100.net/assets/splash.png?1533825855762"></a>
+      </p>
+    </div>
+    <div style="clear: both;"></div>
   </mat-card>
 </div>
